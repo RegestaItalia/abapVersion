@@ -15,4 +15,4 @@ outputs:
     description: 'abapGit repository version'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
