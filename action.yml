@@ -1,5 +1,9 @@
 name: 'abapVersion'
 description: 'Extract abapGit repository version'
+author: 'Simone Gaffurini'
+branding:
+  icon: 'tag'
+  color: 'green'
 inputs:
   token:
     description: 'Github token'
