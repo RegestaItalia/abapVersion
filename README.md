@@ -38,6 +38,7 @@ To work the class/interface referenced in the .abapgit.xml file **must** be in t
   uses: RegestaItalia/abapVersion@main
   id: abapVersion
   with:
+    token: ${{ secrets.GITHUB_TOKEN }}
     repoFullName: abapGit/abapGit
     branch: main
 - name: Print repository version
