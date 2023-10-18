@@ -29,7 +29,7 @@ To work the class/interface referenced in the .abapgit.xml file **must** be in t
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
 - name: Print repository version
-  run: echo "id: ${{ steps.abapVersion.outputs.version }}
+  run: echo ${{ steps.abapVersion.outputs.version }}
 ```
 
 ## Get the version of another repository
@@ -41,5 +41,5 @@ To work the class/interface referenced in the .abapgit.xml file **must** be in t
     repoFullName: abapGit/abapGit
     branch: main
 - name: Print repository version
-  run: echo "id: ${{ steps.abapVersion.outputs.version }}
+  run: echo ${{ steps.abapVersion.outputs.version }}
 ```
