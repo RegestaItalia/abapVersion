@@ -1,7 +1,7 @@
 # abapVersion
 Extract version from [abapGit](https://abapgit.org/) repository.
 
-Since the introduction of the version property in the [.abapgit.xml](https://docs.abapgit.org/user-guide/repo-settings/dot-abapgit.html) file, it is not possible to reference a static variable where the version of a repository is stored.
+Since the introduction of the version property in the [.abapgit.xml](https://docs.abapgit.org/user-guide/repo-settings/dot-abapgit.html) file, it is now possible to reference a static variable where the version of a repository is stored.
 
 This action will extract from the repository the value of the defined variable.
 
