@@ -100,7 +100,7 @@ export async function getVersion(data: ActionArgs) {
     const base64SourceCode = (sourceFileData.data as any).content;
     const rawSourceCode = atob(base64SourceCode);
 
-    const variableRegex = new RegExp(`(?:CONSTANTS|CLASS-DATA)\\s*${versionObjVar}\\s*.*'(.*)'`, 'gmi');
+    const variableRegex = new RegExp(`(?:CONSTANTS|CLASS-DATA)\\s*(?:\\:)\\s*${versionObjVar}\\s*.*'(.*)'`, 'gmi');
     const res = variableRegex.exec(rawSourceCode);
     if(res){
         return res[1];

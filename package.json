@@ -1,6 +1,6 @@
 {
   "name": "@regestaitalia/abapversion",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Extract abapGit repository version",
   "scripts": {
     "pack": "ncc build tsDist/index.js --license licenses.txt",

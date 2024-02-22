@@ -34719,7 +34719,7 @@ function getVersion(data) {
         const sourceFileData = yield octokit.request(`GET ${fileUrl}`);
         const base64SourceCode = sourceFileData.data.content;
         const rawSourceCode = atob(base64SourceCode);
-        const variableRegex = new RegExp(`(?:CONSTANTS|CLASS-DATA)\\s*${versionObjVar}\\s*.*'(.*)'`, 'gmi');
+        const variableRegex = new RegExp(`(?:CONSTANTS|CLASS-DATA)\\s*(?:\\:)\\s*${versionObjVar}\\s*.*'(.*)'`, 'gmi');
         const res = variableRegex.exec(rawSourceCode);
         if (res) {
             return res[1];
